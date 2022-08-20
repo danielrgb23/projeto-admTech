@@ -18,3 +18,9 @@
 -inicie o projeto no run
 </br>
 -vá no seu navegador e acesse http://localhost:8000/swagger-ui/index.html#/
+</br>
+</br>
+# ✨ special thanks ✨ #
+Code with 💜 by : 
+* [Danielrgb23/Daniel Augusto](https://www.linkedin.com/in/daniel-augusto02/)
+* [Wanessa Santos](https://www.linkedin.com/in/ssantoswanessa360/)
