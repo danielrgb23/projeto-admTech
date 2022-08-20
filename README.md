@@ -14,3 +14,5 @@
 #Acessando projeto
 
 -Apos fazer o clone do projeto entre na pasta Projeto-Back, isso é feito ao abri o editor de codigo Jetbrains
+-inicie o projeto no run
+-vá no seu navegador e acesse http://localhost:8000/swagger-ui/index.html#/
