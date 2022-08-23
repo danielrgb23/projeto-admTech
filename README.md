@@ -1,23 +1,23 @@
 # projeto-admTech
 
-#Ferramentas
+# Ferramentas
 
--Para conseguir visualizar o codigo a ferramenta JetBrains mono tem que ser instalada em sua maquina
+- Para conseguir visualizar o codigo a ferramenta JetBrains mono tem que ser instalada em sua maquina
 <a href="https://www.jetbrains.com/idea/download/#section=windows" target="_blanck">Faça o Download aqui</a>
 
--Para visualizar o banco de dados será necessario o DBeaver
+- Para visualizar o banco de dados será necessario o DBeaver
 <a href="https://dbeaver.io/download/" target="_blanck">Faça o download aqui</a>
 
--Tambem será necessario a utilização postgreSql para o banco realmente existir
+- Tambem será necessario a utilização postgreSql para o banco realmente existir
 <a href="https://www.postgresql.org/download/" target="_blanck">Faça o download</a>
 
-#Acessando projeto
+# Acessando projeto
 
--Apos fazer o clone do projeto entre na pasta Projeto-Back, isso é feito ao abri o editor de codigo Jetbrains
+- Apos fazer o clone do projeto entre na pasta Projeto-Back, isso é feito ao abri o editor de codigo Jetbrains
 </br>
--inicie o projeto no run
+- inicie o projeto no run
 </br>
--vá no seu navegador e acesse http://localhost:8000/swagger-ui/index.html#/
+- vá no seu navegador e acesse http://localhost:8000/swagger-ui/index.html#/
 </br>
 </br>
 # ✨ special thanks ✨ #
@@ -25,3 +25,5 @@ Code with 💜 by :
 * [Daniel Augusto](https://www.linkedin.com/in/daniel-augusto02/)
 * [Liandra Nascimento](https://www.linkedin.com/in/liandra-n-231762189/)
 * [Wanessa Santos](https://www.linkedin.com/in/ssantoswanessa360/)
+
+pao
