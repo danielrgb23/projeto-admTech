@@ -20,10 +20,13 @@
 - vá no seu navegador e acesse http://localhost:8000/swagger-ui/index.html#/
 </br>
 </br>
+
 # ✨ special thanks ✨ #
+
 Code with 💜 by : 
+
 * [Daniel Augusto](https://www.linkedin.com/in/daniel-augusto02/)
 * [Liandra Nascimento](https://www.linkedin.com/in/liandra-n-231762189/)
 * [Wanessa Santos](https://www.linkedin.com/in/ssantoswanessa360/)
 
-pao
+
