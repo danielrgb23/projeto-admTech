@@ -18,8 +18,6 @@
 - inicie o projeto no run
 
 - vá no seu navegador e acesse http://localhost:8000/swagger-ui/index.html#/
-</br>
-</br>
 
 # ✨ special thanks ✨ #
 
