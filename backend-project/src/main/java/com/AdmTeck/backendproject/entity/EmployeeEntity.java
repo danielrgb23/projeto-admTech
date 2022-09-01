@@ -31,4 +31,7 @@ public class EmployeeEntity {
     @Column (name = "emp_address")
     private String address;
 
+    @Column (name = "emp_email")
+    private String email;
+
 }

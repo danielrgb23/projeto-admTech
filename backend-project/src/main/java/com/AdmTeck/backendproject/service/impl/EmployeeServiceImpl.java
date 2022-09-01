@@ -39,6 +39,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         employeeEntity.setGender(employeeRequest.getGender());
         employeeEntity.setDob(employeeRequest.getDob());
         employeeEntity.setAddress(employeeRequest.getAddress());
+        employeeEntity.setEmail(employeeRequest.getEmail());
         employeeRepository.save(employeeEntity);
 
         return EmployeeMapper.MAPPER.bindDataEntityToResponse(employeeEntity);
@@ -55,6 +56,7 @@ public class EmployeeServiceImpl implements EmployeeService {
             employeeEntity.setGender(employeeRequest.getGender());
             employeeEntity.setDob(employeeRequest.getDob());
             employeeEntity.setAddress(employeeRequest.getAddress());
+            employeeEntity.setEmail(employeeRequest.getEmail());
             employeeRepository.save(employeeEntity);
 
             return EmployeeMapper.MAPPER.bindDataEntityToResponse(employeeEntity);

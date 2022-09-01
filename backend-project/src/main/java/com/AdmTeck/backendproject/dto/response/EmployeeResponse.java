@@ -16,4 +16,5 @@ public class EmployeeResponse implements Serializable {
     private String gender;
     private Date dob;
     private String address;
+    private String email;
 }
