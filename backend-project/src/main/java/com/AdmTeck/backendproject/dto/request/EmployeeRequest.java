@@ -18,4 +18,5 @@ public class EmployeeRequest implements Serializable {
     private Date dob;
     private String address;
     private String email;
+    private String password;
 }
