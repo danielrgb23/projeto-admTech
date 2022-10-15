@@ -12,8 +12,10 @@ import java.util.Date;
 @NoArgsConstructor
 public class EmployeeResponse implements Serializable {
     private Long id;
-    private String name;
+    private String username;
     private String gender;
     private Date dob;
     private String address;
+    private String password;
+    private String email;
 }

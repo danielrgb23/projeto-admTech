@@ -7,8 +7,10 @@ import java.util.Date;
 
 @Data
 public class EmployeeRequest implements Serializable {
-    private String name;
+    private String username;
     private String gender;
     private Date dob;
     private String address;
+    private String password;
+    private String email;
 }

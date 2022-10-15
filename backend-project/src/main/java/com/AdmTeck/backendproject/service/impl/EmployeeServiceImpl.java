@@ -35,10 +35,12 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public EmployeeResponse createEmployee(EmployeeRequest employeeRequest) {
         EmployeeEntity employeeEntity = new EmployeeEntity();
-        employeeEntity.setName(employeeRequest.getName());
+        employeeEntity.setUsername(employeeRequest.getUsername());
         employeeEntity.setGender(employeeRequest.getGender());
         employeeEntity.setDob(employeeRequest.getDob());
         employeeEntity.setAddress(employeeRequest.getAddress());
+        employeeEntity.setPassword(employeeRequest.getPassword());
+        employeeEntity.setEmail(employeeRequest.getEmail());
         employeeRepository.save(employeeEntity);
 
         return EmployeeMapper.MAPPER.bindDataEntityToResponse(employeeEntity);
@@ -51,10 +53,12 @@ public class EmployeeServiceImpl implements EmployeeService {
         if(checkEmployee.isPresent()){
             EmployeeEntity employeeEntity = new EmployeeEntity();
             employeeEntity.setId(id);
-            employeeEntity.setName(employeeRequest.getName());
+            employeeEntity.setUsername(employeeRequest.getUsername());
             employeeEntity.setGender(employeeRequest.getGender());
             employeeEntity.setDob(employeeRequest.getDob());
             employeeEntity.setAddress(employeeRequest.getAddress());
+            employeeEntity.setPassword(employeeRequest.getPassword());
+            employeeEntity.setEmail(employeeRequest.getEmail());
             employeeRepository.save(employeeEntity);
 
             return EmployeeMapper.MAPPER.bindDataEntityToResponse(employeeEntity);

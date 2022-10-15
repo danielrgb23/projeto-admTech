@@ -6,9 +6,13 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.Set;
 
 @Entity
-@Table(name = "employees")
+@Table(name = "employees" , uniqueConstraints = {
+        @UniqueConstraint(columnNames = {"emp_name"}),
+        @UniqueConstraint(columnNames = {"emp_email"})
+})
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -20,7 +24,7 @@ public class EmployeeEntity {
     private Long id;
 
     @Column(name = "emp_name")
-    private String name;
+    private String username;
 
     @Column(name = "emp_gender")
     private String gender;
@@ -31,4 +35,15 @@ public class EmployeeEntity {
     @Column (name = "emp_address")
     private String address;
 
+    @Column (name = "emp_password")
+    private String password;
+
+    @Column (name = "emp_email")
+    private String email;
+
+//    @ManyToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+//    @JoinTable(name = "roles",
+//            joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "emp_id"),
+//            inverseJoinColumns = @JoinColumn(name = "emp_id", referencedColumnName = "role_id"))
+//    private Set<Roles> roles;
 }
