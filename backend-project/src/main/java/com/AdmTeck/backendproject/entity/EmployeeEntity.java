@@ -41,9 +41,9 @@ public class EmployeeEntity {
     @Column (name = "emp_email")
     private String email;
 
-//    @ManyToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
-//    @JoinTable(name = "roles",
-//            joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "emp_id"),
-//            inverseJoinColumns = @JoinColumn(name = "emp_id", referencedColumnName = "role_id"))
-//    private Set<Roles> roles;
+    @ManyToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    @JoinTable(name = "postgres",
+            joinColumns = @JoinColumn(name = "emp_id", referencedColumnName = "emp_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "role_id"))
+    private Set<Roles> roles;
 }
