@@ -118,7 +118,7 @@
     }
    }
 
-   .btn {
+   .btnNav {
     display: flex;
     background: #000000;
     color: white;
@@ -128,18 +128,28 @@
     align-items: center;
     justify-content: center;
     margin: 2rem 0;
-
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    text-decoration: none;
 
     cursor: pointer;
 
     &:hover {
      background: #181818;
+    }
+
+    .btn {
+     display: flex;
+     color: white;
+     background: none;
+     border: none;
+ 
+     font-weight: 400;
+     font-size: 26px;
+     line-height: 30px;
+     display: flex;
+     align-items: center;
+     text-align: center;
+ 
+     cursor: pointer;
     }
    }
   }

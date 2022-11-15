@@ -1,0 +1,30 @@
+.container {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ width: 100vw;
+ height: 10rem;
+ // margin-left: 2rem;
+ background: #100f0f;
+
+ .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 10%;
+
+  h1 {
+   margin-left: 20px;
+   font-family: 'Cambria';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 48px;
+   line-height: 56px;
+   display: flex;
+   align-items: center;
+
+   color: #FFFFFF;
+  }
+ }
+}

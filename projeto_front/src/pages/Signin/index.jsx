@@ -4,6 +4,7 @@ import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
 
 import backgroundTrufado from '../../assets/backgroundTrufado.jpg';
 import styles from './styles.module.scss';
+import { NavLink } from 'react-router-dom';
 
 export function Signin() {
 
@@ -27,12 +28,18 @@ export function Signin() {
       <span>{<BsLinkedin color='#004f93' size='30px' style={{ cursor: 'pointer' }} />}</span>
      </div>
      <div className={styles.inputs}>
-      <input className={styles.inputEmail} type='email' placeholder="E-mail" />
+      <input 
+      className={styles.inputEmail} 
+      type='email' 
+      placeholder="E-mail" 
+      value='equipePk@gmail.com'
+      />
       <div className={styles.containerPassword}>
        <input
         className={styles.inputPassword}
         type={showPassword === true ? 'text' : 'password'}
         placeholder='Senha'
+        value='Me contrata'
        />
        <button className={styles.submit_lente} type='button' onClick={() => Show(!showPassword)}>
         {showPassword === true ? <AiFillEye size='18px' color="#BDBDBD" /> : <AiFillEyeInvisible size='18px' color="#BDBDBD" />}
@@ -41,7 +48,9 @@ export function Signin() {
 
       {/* <input className={styles.inputSenha} type='password' placeholder="Senha" /> */}
      </div>
+     <NavLink to='/' className={styles.btnNav}>
      <button className={styles.btn}>Entrar</button>
+     </NavLink>
     </div>
    </div>
   </div>
