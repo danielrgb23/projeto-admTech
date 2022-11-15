@@ -1,7 +1,7 @@
 import React from 'react';
 import {RiPencilLine} from 'react-icons/ri'
-import { Header } from '../../../components/Header';
-import { Sidebar } from '../../../components/Sidebar';
+import { Header } from '../../../../components/Header';
+import { Sidebar } from '../../../../components/Sidebar';
 import styles from './styles.module.scss';
 
 export function ShowAfiliados() {

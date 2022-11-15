@@ -39,7 +39,6 @@ public class EmployeeServiceImpl implements EmployeeService {
         employeeEntity.setGender(employeeRequest.getGender());
         employeeEntity.setDob(employeeRequest.getDob());
         employeeEntity.setAddress(employeeRequest.getAddress());
-        employeeEntity.setPassword(employeeRequest.getPassword());
         employeeEntity.setEmail(employeeRequest.getEmail());
         employeeRepository.save(employeeEntity);
 
@@ -57,7 +56,6 @@ public class EmployeeServiceImpl implements EmployeeService {
             employeeEntity.setGender(employeeRequest.getGender());
             employeeEntity.setDob(employeeRequest.getDob());
             employeeEntity.setAddress(employeeRequest.getAddress());
-            employeeEntity.setPassword(employeeRequest.getPassword());
             employeeEntity.setEmail(employeeRequest.getEmail());
             employeeRepository.save(employeeEntity);
 

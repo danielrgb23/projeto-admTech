@@ -1,0 +1,149 @@
+.container {
+ display: flex;
+ flex-direction: column;
+ width: 100vw;
+ height: 100vh;
+
+
+ .content {
+  display: flex;
+  // flex-direction: column;
+  height: 100%;
+  width: 100%;
+  // justify-content: center;
+  // align-items: center;
+
+  .components {
+   display: flex;
+   width: 100%;
+   height: auto;
+   // overflow-y: scroll;
+   background: #353646;
+   justify-content: center;
+   align-items: center;
+
+   .background {
+    display: flex;
+    flex-direction: column;
+    background: #181B23;
+    width: 90%;
+    height: 80%;
+    border-radius: 4rem;
+    padding: 0 3rem;
+    color: white;
+
+    h1 {
+     display: flex;
+     margin-top: 1rem;
+    }
+
+    .form {
+     display: flex;
+     flex-direction: row;
+     justify-content: start;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+     margin-top: 1rem;
+
+     .columna1 {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      height: 100%;
+      margin: 0 1rem;
+
+      label {
+       display: flex;
+       flex-direction: column;
+       margin: 2.5rem 0;
+       font-weight: bold;
+       color: white;
+
+       input {
+        display: flex;
+        border: none;
+        padding: 1rem;
+        border-radius: .5rem;
+        background: rgb(63, 63, 63);
+        color: white;
+        font-size: 17px;
+       }
+      }
+     }
+
+     .columna2 {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      height: 100%;
+      margin: 0 1rem;
+
+      label {
+       display: flex;
+       flex-direction: column;
+       margin: 2.5rem 0;
+       font-weight: bold;
+       color: white;
+
+       input {
+        display: flex;
+        border: none;
+        padding: 1rem;
+        border-radius: .5rem;
+        background: rgb(63, 63, 63);
+        color: white;
+        font-size: 17px;
+       }
+      }
+     }
+
+     .columna3 {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      height: 100%;
+      margin: 0 1rem;
+
+      button {
+       display: flex;
+       margin: 4.2rem 0;
+       width: 100%;
+       height: 10%;
+       justify-content: center;
+       align-items: center;
+       border: none;
+       background: #0a5dc1;
+       border-radius: 4rem;
+       color: white;
+       font-size: 18px;
+       font-weight: bold;
+
+       &:hover {
+        background: #08366f;
+       }
+      }
+
+      label {
+       display: flex;
+       flex-direction: column;
+       margin: 2.5rem 0;
+       font-weight: bold;
+       color: white;
+
+       input {
+        display: flex;
+        border: none;
+        padding: 1rem;
+        border-radius: .5rem;
+        background: rgb(63, 63, 63);
+        color: white;
+        font-size: 17px;
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}
