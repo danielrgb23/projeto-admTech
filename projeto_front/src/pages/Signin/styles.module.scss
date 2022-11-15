@@ -1,0 +1,147 @@
+.container {
+ display: flex;
+ flex-direction: row;
+ height: 100vh;
+ width: auto;
+
+ .img {
+  display: flex;
+  height: 100vh;
+ }
+
+ .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  background: #1E1E1E;
+
+  .form {
+   display: flex;
+   flex-direction: column;
+   width: 40%;
+   height: 70%;
+   border-radius: 2rem;
+   align-items: center;
+   // justify-content: center;
+   background: white;
+
+   header {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    margin-top: 5rem;
+   }
+
+   .icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 218px;
+    justify-content: space-around;
+    height: 44px;
+    margin: 2rem 0;
+   }
+
+   .inputs {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 80%;
+
+    .inputEmail {
+     display: flex;
+     margin-bottom: 2rem;
+     padding: 1rem;
+     border: 3px solid #000000;
+     border-radius: 2rem;
+
+     font-weight: 400;
+     font-size: 22px;
+     line-height: 30px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     color: #000000;
+    }
+
+    .containerPassword {
+     display: flex;
+     flex-direction: row;
+     border: 3px solid #000000;
+     border-radius: 2rem;
+     // margin-top: 10px;
+     // width: 80%;
+     padding: 1rem;
+     color: #000000;
+
+
+     .submit_lente {
+      border: none;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      outline: none;
+      cursor: pointer;
+      margin-right: .4rem;
+     }
+
+     input {
+      width: 100%;
+      align-items: flex-start;
+      align-items: center;
+      justify-content: center;
+      // padding: 10px;
+
+      border-radius: 4px;
+      box-sizing: border-box;
+      border: none;
+      box-shadow: 0 0 0 0;
+      outline: 0;
+
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000000;
+
+     }
+    }
+   }
+
+   .btn {
+    display: flex;
+    background: #000000;
+    color: white;
+    width: 80%;
+    height: 10%;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    cursor: pointer;
+
+    &:hover {
+     background: #181818;
+    }
+   }
+  }
+ }
+}
