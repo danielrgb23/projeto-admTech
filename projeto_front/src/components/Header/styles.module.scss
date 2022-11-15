@@ -72,6 +72,9 @@
       font-size: 18px;
       line-height: 22px;
       cursor: pointer;
+      &:hover {
+        background: #08366f;
+       }
     }
   }
 }
