@@ -12,11 +12,11 @@ export function Header() {
       <h1>Truffle</h1>
      </div>
      <div className={styles.containerInput}>
-      <input className={styles.input} placeholder="Pesquise algo"/>
       <img src={skiller} />
+      <input className={styles.input} placeholder="Pesquise algo"/>
      </div>
-     <div>
-      <button className={styles.btn}>Novo usuário</button>
+     <div className={styles.containerBtn}>
+      <button className={styles.btn}>Novo colaborador</button>
      </div>
     </div>
   )

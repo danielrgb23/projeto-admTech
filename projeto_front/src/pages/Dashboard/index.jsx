@@ -1,11 +1,15 @@
-import React from 'react'
-import { Header } from '../../components/Header'
+import React from 'react';
+import { Header } from '../../components/Header';
+import { Sidebar } from '../../components/Sidebar';
+import styles from './styles.module.scss';
 
 export function Dashboard() {
   return (
-    <div>
+    <div className={styles.container}>
       <Header />
-      <div></div>
+      <div className={styles.content}>
+        <Sidebar />
+      </div>
     </div>
   )
 }

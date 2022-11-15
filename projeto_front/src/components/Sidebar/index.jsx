@@ -1,7 +1,10 @@
-import React from 'react'
+import React from 'react';
+import styles from './styles.module.scss';
 
-export function sidebar() {
+export function Sidebar() {
   return (
-    <div>index</div>
+    <div className={styles.container}>
+      <h1>hellou</h1>
+    </div>
   )
 }
