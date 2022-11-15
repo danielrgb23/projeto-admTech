@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 import { Header } from '../../../../components/Header';
@@ -16,6 +16,8 @@ export function CreateAfiliado() {
  const [adress, setAdress] = useState('');
  const [email, setEmail] = useState('');
 
+ const [teste, setTeste] = useState([]);
+
  const Request = {
   "username": use,
   "gender": gender,
@@ -25,17 +27,21 @@ export function CreateAfiliado() {
   "email": email,
  }
 
- console.log(Request)
+ console.log(teste)
 
- const CadastroUser = () => {
-  axios.post('http://localhost:8000/employee', Request)
-    .then((res) => {
-      console.log('batata', res)
+ const Conselho = 'http://localhost:8000/employee';
+ useEffect(() => {
+   axios.get(Conselho).then((response) => setTeste(response))
+ }, []);
+//  const CadastroUser = () => {
+//   axios.post('http://localhost:8000/employee', Request)
+//     .then((res) => {
+//       console.log('batata', res)
     
-    }).catch((err) => {
-      console.log(err)
-    })
-}
+//     }).catch((err) => {
+//       console.log(err)
+//     })
+// }
 
  return (
   <div className={styles.container}>
@@ -84,7 +90,7 @@ export function CreateAfiliado() {
           placeholder='Endereço' />
         </label>
 
-        <button onClick={CadastroUser}>Confirmar</button>
+        {/* <button onClick={CadastroUser}>Confirmar</button> */}
        </div>
       </div>
      </div>

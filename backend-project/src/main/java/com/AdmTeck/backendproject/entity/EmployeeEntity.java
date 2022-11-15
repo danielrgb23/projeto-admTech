@@ -9,10 +9,7 @@ import java.util.Date;
 import java.util.Set;
 
 @Entity
-@Table(name = "employees" , uniqueConstraints = {
-        @UniqueConstraint(columnNames = {"emp_name"}),
-        @UniqueConstraint(columnNames = {"emp_email"})
-})
+@Table(name = "employees")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
