@@ -12,7 +12,7 @@ export const AppRoutes = () => {
     <Route path='/afiliados' element={<ShowAfiliados />} />
     <Route path='/afiliados/create' element={<CreateAfiliado />} />
     
-    <Route path='/signin' element={<Signin />} />
+    <Route path='/' element={<Signin />} />
    </Routes>
   </BrowserRouter>
  )

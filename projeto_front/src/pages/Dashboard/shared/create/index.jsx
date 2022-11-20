@@ -23,25 +23,27 @@ export function CreateAfiliado() {
   "gender": gender,
   "dob": data,
   "address": adress,
-  "password": "string",
   "email": email,
  }
 
- console.log(teste)
+//  console.log(teste)
 
- const Conselho = 'http://localhost:8000/employee';
- useEffect(() => {
-   axios.get(Conselho).then((response) => setTeste(response))
- }, []);
-//  const CadastroUser = () => {
-//   axios.post('http://localhost:8000/employee', Request)
-//     .then((res) => {
-//       console.log('batata', res)
+//  const Conselho = 'http://localhost:8000/employee';
+//  useEffect(() => {
+//    axios.get(Conselho).then((response) => setTeste(response.data))
+//  }, []);
+
+//  console.log(teste)
+
+ const CadastroUser = () => {
+  axios.post('http://localhost:8000/employee', Request)
+    .then((res) => {
+      console.log('batata', res)
     
-//     }).catch((err) => {
-//       console.log(err)
-//     })
-// }
+    }).catch((err) => {
+      console.log(err)
+    })
+}
 
  return (
   <div className={styles.container}>
@@ -90,7 +92,7 @@ export function CreateAfiliado() {
           placeholder='Endereço' />
         </label>
 
-        {/* <button onClick={CadastroUser}>Confirmar</button> */}
+        <button onClick={CadastroUser}>Confirmar</button>
        </div>
       </div>
      </div>

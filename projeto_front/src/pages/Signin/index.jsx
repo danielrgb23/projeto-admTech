@@ -48,7 +48,7 @@ export function Signin() {
 
       {/* <input className={styles.inputSenha} type='password' placeholder="Senha" /> */}
      </div>
-     <NavLink to='/' className={styles.btnNav}>
+     <NavLink to='/home' className={styles.btnNav}>
      <button className={styles.btn}>Entrar</button>
      </NavLink>
     </div>
