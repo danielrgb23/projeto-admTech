@@ -1,15 +1,20 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import styles from './styles.module.scss';
+
 
 export function Sidebar() {
   return (
     <div className={styles.container}>
-      <div class ="menu">
-        <li class="search-box">
-        <button type="button" class="btn-primary">Página inicial</button> 
-
+      <div className={styles.menu}>
+        <li className={styles.searchbox}>
+          <button type="button" className={styles.btnprimary}>
+            <NavLink to=''>
+              Página inicial
+            </NavLink>
+          </button>
         </li>
-        </div>
-        </div>
+      </div>
+    </div >
   )
 }

@@ -1,18 +1,21 @@
 .container {
- display: flex;
- width: 15rem;
- height: 100%;
- background: #100f0f;
- font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    width: 15rem;
+    height: 100%;
+    background: #100f0f;
+    font-family: 'Courier New', Courier, monospace;
 
 
-.btn-primary{ 
-    background: pink;
-    color:white;
-    border-color: black;
-    border-style: outset;
-    height:50px;
-    width: 100px;
-    text-shadow: none;
-}
+    .btnprimary {
+        font-family: 'Courier New', Courier, monospace;
+        background: none;
+        color: white;
+        border: none;
+        height: 50px;
+        width: 100px;
+
+        a {
+            color: white;
+        }
+    }
 }
