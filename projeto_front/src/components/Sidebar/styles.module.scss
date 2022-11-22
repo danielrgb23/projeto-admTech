@@ -1,21 +1,27 @@
-.container {
+*.container {
     display: flex;
     width: 15rem;
     height: 100%;
     background: #100f0f;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 
-    .btnprimary {
-        font-family: 'Courier New', Courier, monospace;
+    .btnprimeiro {
+        font-family: Georgia, 'Times New Roman', Times, serif;
         background: none;
+        padding: 6px 20px;
         color: white;
-        border: none;
-        height: 50px;
-        width: 100px;
+        border: 1px white;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: all .3s ease;
 
+    
         a {
             color: white;
+            display: block;
+            padding: 20px 5px;
         }
     }
 }

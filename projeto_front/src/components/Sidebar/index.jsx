@@ -7,13 +7,46 @@ export function Sidebar() {
   return (
     <div className={styles.container}>
       <div className={styles.menu}>
-        <li className={styles.searchbox}>
-          <button type="button" className={styles.btnprimary}>
+        
+        <li>
+          <button type="button" className={styles.btnprimeiro}>
             <NavLink to=''>
-              Página inicial
+            <font-awesome-icon icon="fa-regular fa-house" /> Página inicial
             </NavLink>
           </button>
+          </li>
+            
+            <li>
+          <button type="button" className={styles.btnprimeiro}>
+            <NavLink to=''>
+              Revendedores
+            </NavLink>
+          </button>
+          </li>
+
+          <li>
+          <button type="button" className={styles.btnprimeiro}>
+            <NavLink to=''>
+              Caixa
+            </NavLink>
+          </button>
+          </li>
+
+          <li>
+          <button type="button" className={styles.btnprimeiro}>
+          <NavLink to=''>
+            Produtos
+          </NavLink>
+        </button>
         </li>
+        
+        <li>
+        <button type="button" className={styles.btnprimeiro}>
+            <NavLink to=''>
+              Anotações
+            </NavLink>
+          </button>
+          </li>
       </div>
     </div >
   )
