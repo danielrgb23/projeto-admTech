@@ -25,6 +25,6 @@ Code with 💜 by :
 
 * [Daniel Augusto](https://www.linkedin.com/in/daniel-augusto02/)
 * [Liandra Nascimento](https://www.linkedin.com/in/liandra-n-231762189/)
-* [Wanessa Santos](https://www.linkedin.com/in/ssantoswanessa360/)
+* [Lais](https://www.linkedin.com/in/ssantoswanessa360/)
 
 
