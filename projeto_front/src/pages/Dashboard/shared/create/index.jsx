@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 import { Header } from '../../../../components/Header';
@@ -16,7 +17,9 @@ export function CreateAfiliado() {
  const [adress, setAdress] = useState('');
  const [email, setEmail] = useState('');
 
- const [teste, setTeste] = useState([]);
+ const navigate = useNavigate()
+
+//  const [teste, setTeste] = useState([]);
 
  const Request = {
   "username": use,
@@ -28,9 +31,9 @@ export function CreateAfiliado() {
 
 //  console.log(teste)
 
-//  const Conselho = 'http://localhost:8000/employee';
+//  const NewColaborator = 'http://localhost:8000/employee';
 //  useEffect(() => {
-//    axios.get(Conselho).then((response) => setTeste(response.data))
+//    axios.post(NewColaborator).then((response) => setTeste(response.data))
 //  }, []);
 
 //  console.log(teste)
@@ -39,7 +42,7 @@ export function CreateAfiliado() {
   axios.post('http://localhost:8000/employee', Request)
     .then((res) => {
       console.log('batata', res)
-    
+      navigate('/afiliados')
     }).catch((err) => {
       console.log(err)
     })
