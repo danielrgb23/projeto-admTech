@@ -51,6 +51,7 @@
       font-weight: 400;
       font-size: 22px;
       line-height: 41px;
+      width: 90%;
     }
   }
 
@@ -59,6 +60,10 @@
     width: 50%;
     justify-content: end;
     margin-right: 2rem;
+
+    a {
+      text-decoration: none;
+    }
 
     .btn {
       background: #0a5dc1;

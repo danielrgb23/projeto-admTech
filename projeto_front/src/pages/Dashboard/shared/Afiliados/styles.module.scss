@@ -27,7 +27,7 @@
     flex-direction: column;
     background: #181B23;
     width: 90%;
-    height: 80%;
+    height: auto;
     border-radius: 4rem;
 
     .table {
@@ -62,8 +62,8 @@
      .tbody {
       display: flex;
       width: 100%;
-      margin-top: 2rem;
       height: 3rem;
+      margin-top: 2rem;
       align-items: center;
       padding: 0 2rem;
       color: white;
