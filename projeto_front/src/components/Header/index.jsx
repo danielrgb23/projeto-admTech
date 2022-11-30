@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.svg';
 import skiller from '../../assets/skiller.svg';
 
@@ -16,7 +17,9 @@ export function Header() {
       <input className={styles.input} placeholder="Pesquise algo"/>
      </div>
      <div className={styles.containerBtn}>
+      <NavLink to='/afiliados/create' className={styles.containerBtn}>
       <button className={styles.btn}>Novo colaborador</button>
+      </NavLink>
      </div>
     </div>
   )

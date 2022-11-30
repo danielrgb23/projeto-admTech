@@ -1,18 +1,36 @@
-.container {
- display: flex;
- width: 15rem;
- height: 100%;
- background: #100f0f;
- font-family: 'Courier New', Courier, monospace;
+*.container {
+    display: flex;
+    width: 15rem;
+    height: 100%;
+    background: #100f0f;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 
-.btn-primary{ 
-    background: pink;
-    color:white;
-    border-color: black;
-    border-style: outset;
-    height:50px;
-    width: 100px;
-    text-shadow: none;
-}
+    .btnprimeiro {
+
+        margin-top: 5rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        align-items: center;
+        background: none;
+        padding: 6px 20px;
+        color: white;
+        border: 1px white;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: all .3s ease;
+
+        a {
+            color: white;
+            display: block;
+            padding: 20px 5px;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
